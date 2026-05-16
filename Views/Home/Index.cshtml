@@ -1,0 +1,326 @@
+﻿@model IEnumerable<ClassicCarsWeb.Models.Car>
+
+@{
+    ViewData["Title"] = "Professional Garage Catalog";
+    int currentPage = (int)ViewData["CurrentPage"];
+    int totalPages = (int)ViewData["TotalPages"];
+    int totalCount = (int)ViewData["TotalCount"];
+    string searchQuery = (string)ViewData["SearchQuery"];
+    int? yearFrom = (int?)ViewData["YearFrom"];
+    int? yearTo = (int?)ViewData["YearTo"];
+    string selectedMake = (string)ViewData["SelectedMake"];
+    string sortBy = (string)ViewData["SortBy"];
+}
+
+<style>
+    body { background-color: #121212 !important; color: #e0e0e0 !important; }
+    .dark-input { background-color: #2b2b2b !important; border: 1px solid #444444 !important; color: #ffffff !important; }
+    .dark-input:focus { border-color: #dc3545 !important; box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25) !important; }
+    .classic-card { transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out; cursor: pointer; }
+    .classic-card:hover { transform: translateY(-6px); box-shadow: 0 10px 20px rgba(220, 53, 69, 0.25) !important; }
+    .page-link-dark { background-color: #1e1e1e !important; color: #ffffff !important; border-color: #444444 !important; }
+    .page-link-dark:hover { background-color: #2b2b2b !important; color: #dc3545 !important; }
+    .page-item.active .page-link-dark { background-color: #dc3545 !important; border-color: #dc3545 !important; color: #ffffff !important; }
+    .page-item.disabled .page-link-dark { background-color: #161616 !important; color: #6c757d !important; }
+</style>
+
+<div class="container mt-4">
+    <div class="row mb-3">
+        <div class="col-12 d-flex justify-content-between align-items-center border-bottom border-secondary pb-2">
+            <span class="text-secondary fw-semibold">
+                Found @totalCount match(es) inside your filtered selection
+            </span>
+            <span class="badge bg-danger">Fleet Scale: 100 Cars Total</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            
+            <div class="card p-4 shadow border-0 text-light mb-4" style="background-color: #1e1e1e !important;">
+                <h4 class="mb-3" style="font-weight: 600; color: #ffffff;"><span style="color: #dc3545;">Garage</span> Controls</h4>
+                
+                <form action="@Url.Action("Index", "Home")" method="get">
+                    <div class="mb-3">
+                        <label class="small text-secondary fw-bold mb-1">KEYWORD SEARCH</label>
+                        <input type="text" name="searchQuery" class="form-control dark-input" placeholder="e.g. Mustang, Supra..." value="@searchQuery" autocomplete="off" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="small text-secondary fw-bold mb-1">MANUFACTURER / MAKE</label>
+                        @Html.DropDownList("selectedMake", (SelectList)ViewBag.MakesList, "All Brands", new { @class = "form-select dark-input" })
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="small text-secondary fw-bold mb-1">PRODUCTION TIMELINE (YEAR)</label>
+                        <div class="input-group">
+                            <input type="number" name="yearFrom" class="form-control dark-input" placeholder="From" value="@yearFrom" />
+                            <input type="number" name="yearTo" class="form-control dark-input" placeholder="To" value="@yearTo" />
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="small text-secondary fw-bold mb-1">REARRANGE FLEET ORDER</label>
+                        <select name="sortBy" class="form-select dark-input">
+                            <!option value="year_asc" @(sortBy == "year_asc" ? "selected" : "")>Year: Oldest to Newest</!option>
+                            <!option value="year_desc" @(sortBy == "year_desc" ? "selected" : "")>Year: Newest to Oldest</!option>
+                            <!option value="name_asc" @(sortBy == "name_asc" ? "selected" : "")>Alphabetical (A-Z)</!option>
+                            <!option value="name_desc" @(sortBy == "name_desc" ? "selected" : "")>Alphabetical (Z-A)</!option>
+                        </select>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn text-white" style="background-color: #dc3545;">Apply Filters</button>
+                        <a href="@Url.Action("Index", "Home")" class="btn btn-outline-secondary btn-sm text-light border-secondary">Reset View</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card p-4 shadow border-0 text-light" style="background-color: #1e1e1e !important;">
+                <h5 class="mb-3 text-white fw-bold"><i class="text-danger">⚡</i> Garage Insights</h5>
+                
+                <div id="insights-rotation-box" style="min-height: 65px; position: relative;">
+                    <div class="insight-slide" id="slide-0" style="display: block;">
+                        <small class="text-secondary d-block uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.5px; font-weight: 700;">FEATURED VINTAGE (PRE-1965)</small>
+                        <span id="dynamic-vintage-car" class="fs-5 text-white fw-semibold">1954 Mercedes-Benz 300 SL</span>
+                    </div>
+                    
+                    <div class="insight-slide" id="slide-1" style="display: none;">
+                        <small class="text-secondary d-block uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.5px; font-weight: 700;">MODERN CLASSIC (1980+)</small>
+                        <span id="dynamic-modern-car" class="fs-5 text-white fw-semibold">1988 Ferrari Testarossa</span>
+                    </div>
+                    
+                    <div class="insight-slide" id="slide-2" style="display: none;">
+                        <small class="text-secondary d-block uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.5px; font-weight: 700;">FEATURED PERF VEHICLE</small>
+                        <span id="dynamic-perf-car" class="text-danger fw-semibold d-block text-truncate" style="font-size: 1rem;">1970 Plymouth Superbird (425 hp)</span>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-2 mt-2 pt-1">
+                    <span id="dot-0" onclick="manuallyJumpToSlide(0)" class="rounded-circle d-inline-block" style="width: 10px; height: 10px; background-color: #dc3545; cursor: pointer; transition: background-color 0.2s;"></span>
+                    <span id="dot-1" onclick="manuallyJumpToSlide(1)" class="rounded-circle d-inline-block" style="width: 10px; height: 10px; background-color: #6c757d; cursor: pointer; transition: background-color 0.2s;"></span>
+                    <span id="dot-2" onclick="manuallyJumpToSlide(2)" class="rounded-circle d-inline-block" style="width: 10px; height: 10px; background-color: #6c757d; cursor: pointer; transition: background-color 0.2s;"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-8">
+            <div class="row">
+                @if (Model != null && Model.Any())
+                {
+                    @foreach (var car in Model)
+                    {
+                        <div class="col-sm-6 mb-4">
+                            <div class="card h-100 classic-card border-0 text-light" style="background-color: #1e1e1e !important;"
+                                 data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                 data-title="@car.Title" data-img="@car.ImageUrl" 
+                                 data-make="@car.Make" data-year="@car.Year"
+                                 data-engine="@car.Engine" data-hp="@car.Horsepower" data-fact="@car.FunFact">
+                                
+                                <img src="@car.ImageUrl" class="card-img-top" alt="@car.Title" style="height: 200px; object-fit: cover;" 
+                                     onerror="this.src='https://placehold.co/600x400/2b2b2b/eeeeee?text=Classic+Car'"/>
+                                
+                                <div class="card-body d-flex flex-column justify-content-between gap-2">
+                                    <h5 class="card-title m-0" style="font-size: 1.1rem; font-weight: 600; color: #ffffff;">@car.Title</h5>
+                                    <div>
+                                        <span class="badge bg-danger me-1">@car.Year</span>
+                                        <span class="badge bg-secondary">@car.Make</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    
+                    @if (totalPages > 1)
+                    {
+                        <div class="col-12 mt-2">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item @(currentPage == 1 ? "disabled" : "")">
+                                        <a class="page-link page-link-dark" href="@Url.Action("Index", new { searchQuery = searchQuery, yearFrom = yearFrom, yearTo = yearTo, selectedMake = selectedMake, sortBy = sortBy, page = currentPage - 1 })">&laquo;</a>
+                                    </li>
+
+                                    @for (int i = 1; i <= totalPages; i++)
+                                    {
+                                        <li class="page-item @(currentPage == i ? "active" : "")">
+                                            <a class="page-link page-link-dark" href="@Url.Action("Index", new { searchQuery = searchQuery, yearFrom = yearFrom, yearTo = yearTo, selectedMake = selectedMake, sortBy = sortBy, page = i })">@i</a>
+                                        </li>
+                                    }
+
+                                    <li class="page-item @(currentPage == totalPages ? "disabled" : "")">
+                                        <a class="page-link page-link-dark" href="@Url.Action("Index", new { searchQuery = searchQuery, yearFrom = yearFrom, yearTo = yearTo, selectedMake = selectedMake, sortBy = sortBy, page = currentPage + 1 })">&raquo;</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-12 text-center py-5">
+                        <h4 class="text-muted">No classics match that filtered spec layout.</h4>
+                        <p class="text-secondary">Try widening your year parameters or resetting filters.</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 text-light shadow-lg" style="background-color: #1e1e1e;">
+            <div class="modal-header border-bottom border-secondary">
+                <h5 class="modal-title fw-bold" id="modalTitle">Car Details</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" style="z-index: 1060; opacity: 1;"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <img id="modalImage" src="" class="img-fluid rounded shadow-sm w-100" style="max-height: 280px; object-fit: cover;" alt="Car view" />
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 id="modalCarName" class="text-white fw-bold mb-3"></h4>
+                            <ul class="list-group list-group-flush bg-transparent">
+                                <li class="list-group-item bg-transparent text-light border-secondary px-0">
+                                    <strong>Engine:</strong> <span id="modalEngine" class="float-end text-secondary"></span>
+                                </li>
+                                <li class="list-group-item bg-transparent text-light border-secondary px-0">
+                                    <strong>Output Performance:</strong> <span id="modalHP" class="float-end text-secondary"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-3 p-3 rounded" style="background-color: #2b2b2b;">
+                            <small class="text-danger fw-bold d-block mb-1">HERITAGE TRIVIA</small>
+                            <p id="modalFact" class="m-0 text-secondary" style="font-size: 0.9rem; line-height: 1.4;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // --- 1. POPUP MODAL DATA POPULATOR ---
+        const quickViewModal = document.getElementById('quickViewModal');
+        if (quickViewModal) {
+            quickViewModal.addEventListener('show.bs.modal', function (event) {
+                const card = event.relatedTarget;
+                const title = card.getAttribute('data-title');
+                const img = card.getAttribute('data-img');
+                const engine = card.getAttribute('data-engine');
+                const hp = card.getAttribute('data-hp');
+                const fact = card.getAttribute('data-fact');
+
+                document.getElementById('modalTitle').textContent = title;
+                document.getElementById('modalCarName').textContent = title;
+                document.getElementById('modalEngine').textContent = engine;
+                document.getElementById('modalHP').textContent = hp;
+                document.getElementById('modalFact').textContent = fact;
+                
+                const modalImgEl = document.getElementById('modalImage');
+                modalImgEl.src = img;
+                modalImgEl.onerror = function() {
+                    this.src = 'https://placehold.co/600x400/2b2b2b/eeeeee?text=Classic+Car';
+                };
+            });
+        }
+
+        // --- 2. LIVE SHUFFLING ROTATING DASHBOARD ENGINE ---
+        let currentSlideIndex = 0;
+        const totalSlidesCount = 3;
+        const rotationIntervalTime = 10000; // 10 seconds
+        let rotationTimerInstance = setInterval(rotateInsightsDashboard, rotationIntervalTime);
+
+        // Pool 1: Vintage Cars (Pre-1965)
+        const vintageFleetPool = [
+            "1949 Chevrolet 3100",
+            "1954 Mercedes-Benz 300 SL",
+            "1956 Porsche 356 Speedster",
+            "1959 Cadillac Eldorado Biarritz",
+            "1961 Jaguar E-Type Series 1",
+            "1963 Studebaker Avanti",
+            "1963 Aston Martin DB5",
+            "1963 Chevrolet Corvette Sting Ray"
+        ];
+
+        // Pool 2: Modern Classics (1980 and up)
+        const modernFleetPool = [
+            "1981 DeLorean DMC-12",
+            "1982 Jaguar XJS",
+            "1987 Buick Grand National GNX",
+            "1988 Ferrari Testarossa",
+            "1990 Nissan Skyline GT-R (R32)",
+            "1994 Toyota Supra MK4"
+        ];
+
+        // Pool 3: High-Performance Output Fleet (300 hp+)
+        const highPerformanceFleet = [
+            "1970 Plymouth Superbird (425 hp)",
+            "1966 AC Cobra 427 (425 hp)",
+            "1970 Plymouth Hemi 'Cuda (425 hp)",
+            "1970 Dodge Challenger R/T (390 hp)",
+            "1988 Ferrari Testarossa (380 hp)",
+            "1969 Dodge Charger R/T (375 hp)",
+            "1959 Cadillac Eldorado Biarritz (345 hp)",
+            "1994 Toyota Supra MK4 (320 hp)",
+            "1967 Ford Mustang Fastback (320 hp)",
+            "1965 Shelby Mustang GT350 (306 hp)"
+        ];
+
+        function shuffleAllDashboardSlidesText(targetIndex) {
+            const rng = Math.floor;
+            const rand = Math.random;
+
+            // Dot 1 update logic
+            if (targetIndex === 0) {
+                const element = document.getElementById('dynamic-vintage-car');
+                if (element) element.textContent = vintageFleetPool[rng(rand() * vintageFleetPool.length)];
+            }
+            // Dot 2 update logic
+            else if (targetIndex === 1) {
+                const element = document.getElementById('dynamic-modern-car');
+                if (element) element.textContent = modernFleetPool[rng(rand() * modernFleetPool.length)];
+            }
+            // Dot 3 update logic
+            else if (targetIndex === 2) {
+                const element = document.getElementById('dynamic-perf-car');
+                if (element) element.textContent = highPerformanceFleet[rng(rand() * highPerformanceFleet.length)];
+            }
+        }
+
+        function switchDashboardDOMView(targetIndex) {
+            // Remove active states from old index elements
+            const oldSlide = document.getElementById(`slide-${currentSlideIndex}`);
+            const oldDot = document.getElementById(`dot-${currentSlideIndex}`);
+            if (oldSlide) oldSlide.style.display = 'none';
+            if (oldDot) oldDot.style.backgroundColor = '#6c757d';
+
+            // Run shuffling string change right before showing the layout panel
+            shuffleAllDashboardSlidesText(targetIndex);
+
+            currentSlideIndex = targetIndex;
+
+            // Show and highlight next index elements
+            const nextSlide = document.getElementById(`slide-${currentSlideIndex}`);
+            const nextDot = document.getElementById(`dot-${currentSlideIndex}`);
+            if (nextSlide) nextSlide.style.display = 'block';
+            if (nextDot) nextDot.style.backgroundColor = '#dc3545';
+        }
+
+        function rotateInsightsDashboard() {
+            let nextIndex = (currentSlideIndex + 1) % totalSlidesCount;
+            switchDashboardDOMView(nextIndex);
+        }
+
+        function manuallyJumpToSlide(targetIndex) {
+            clearInterval(rotationTimerInstance);
+            switchDashboardDOMView(targetIndex);
+            rotationTimerInstance = setInterval(rotateInsightsDashboard, rotationIntervalTime);
+        }
+    </script>
+}

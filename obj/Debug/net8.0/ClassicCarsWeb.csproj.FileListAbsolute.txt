@@ -1,0 +1,61 @@
+C:\Users\thatm\ClassicCarsWeb\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\thatm\ClassicCarsWeb\bin\Debug\net8.0\appsettings.json
+C:\Users\thatm\ClassicCarsWeb\bin\Debug\net8.0\ClassicCarsWeb.staticwebassets.runtime.json
+C:\Users\thatm\ClassicCarsWeb\bin\Debug\net8.0\ClassicCarsWeb.exe
+C:\Users\thatm\ClassicCarsWeb\bin\Debug\net8.0\ClassicCarsWeb.deps.json
+C:\Users\thatm\ClassicCarsWeb\bin\Debug\net8.0\ClassicCarsWeb.runtimeconfig.json
+C:\Users\thatm\ClassicCarsWeb\bin\Debug\net8.0\ClassicCarsWeb.dll
+C:\Users\thatm\ClassicCarsWeb\bin\Debug\net8.0\ClassicCarsWeb.pdb
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.AssemblyInfoInputs.cache
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.AssemblyInfo.cs
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.csproj.CoreCompileInputs.cache
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.RazorAssemblyInfo.cache
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.RazorAssemblyInfo.cs
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\staticwebassets\msbuild.ClassicCarsWeb.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\staticwebassets\msbuild.build.ClassicCarsWeb.props
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ClassicCarsWeb.props
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ClassicCarsWeb.props
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\scopedcss\bundle\ClassicCarsWeb.styles.css
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\scopedcss\projectbundle\ClassicCarsWeb.bundle.scp.css
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.dll
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\refint\ClassicCarsWeb.dll
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.pdb
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.genruntimeconfig.cache
+C:\Users\thatm\ClassicCarsWeb\obj\Debug\net8.0\ref\ClassicCarsWeb.dll
+D:\CAR DEALERSHIP\ClassicCarsWeb\bin\Debug\net8.0\appsettings.Development.json
+D:\CAR DEALERSHIP\ClassicCarsWeb\bin\Debug\net8.0\appsettings.json
+D:\CAR DEALERSHIP\ClassicCarsWeb\bin\Debug\net8.0\ClassicCarsWeb.staticwebassets.runtime.json
+D:\CAR DEALERSHIP\ClassicCarsWeb\bin\Debug\net8.0\ClassicCarsWeb.exe
+D:\CAR DEALERSHIP\ClassicCarsWeb\bin\Debug\net8.0\ClassicCarsWeb.deps.json
+D:\CAR DEALERSHIP\ClassicCarsWeb\bin\Debug\net8.0\ClassicCarsWeb.runtimeconfig.json
+D:\CAR DEALERSHIP\ClassicCarsWeb\bin\Debug\net8.0\ClassicCarsWeb.dll
+D:\CAR DEALERSHIP\ClassicCarsWeb\bin\Debug\net8.0\ClassicCarsWeb.pdb
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.GeneratedMSBuildEditorConfig.editorconfig
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.AssemblyInfoInputs.cache
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.AssemblyInfo.cs
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.csproj.CoreCompileInputs.cache
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.MvcApplicationPartsAssemblyInfo.cache
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.RazorAssemblyInfo.cache
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.RazorAssemblyInfo.cs
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\staticwebassets.build.json
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\staticwebassets.development.json
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\staticwebassets\msbuild.ClassicCarsWeb.Microsoft.AspNetCore.StaticWebAssets.props
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\staticwebassets\msbuild.build.ClassicCarsWeb.props
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ClassicCarsWeb.props
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ClassicCarsWeb.props
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\staticwebassets.pack.json
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\scopedcss\bundle\ClassicCarsWeb.styles.css
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\scopedcss\projectbundle\ClassicCarsWeb.bundle.scp.css
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.dll
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\refint\ClassicCarsWeb.dll
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.pdb
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.genruntimeconfig.cache
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\ref\ClassicCarsWeb.dll
+D:\CAR DEALERSHIP\ClassicCarsWeb\bin\Debug\net8.0\cars.json
