@@ -21,8 +21,68 @@
       "PackagePath": "staticwebassets\\images\\avanti.mp4"
     },
     {
+      "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\bmw2002.jpg",
+      "PackagePath": "staticwebassets\\images\\bmw2002.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\bronco.jpg",
+      "PackagePath": "staticwebassets\\images\\bronco.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\charger.jpg",
+      "PackagePath": "staticwebassets\\images\\charger.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\corvette.jpg",
+      "PackagePath": "staticwebassets\\images\\corvette.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\datsun.jpg",
+      "PackagePath": "staticwebassets\\images\\datsun.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\db5.jpg",
+      "PackagePath": "staticwebassets\\images\\db5.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\eldorado.jpg",
+      "PackagePath": "staticwebassets\\images\\eldorado.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\etype.jpg",
+      "PackagePath": "staticwebassets\\images\\etype.jpg"
+    },
+    {
       "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\jaguar.jpg",
       "PackagePath": "staticwebassets\\images\\jaguar.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\mustang.jpg",
+      "PackagePath": "staticwebassets\\images\\mustang.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\nova.jpg",
+      "PackagePath": "staticwebassets\\images\\nova.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\porsche.jpg",
+      "PackagePath": "staticwebassets\\images\\porsche.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\superbird.jpg",
+      "PackagePath": "staticwebassets\\images\\superbird.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\testarossa.jpg",
+      "PackagePath": "staticwebassets\\images\\testarossa.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\truck.jpg",
+      "PackagePath": "staticwebassets\\images\\truck.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\vwbus.jpg",
+      "PackagePath": "staticwebassets\\images\\vwbus.jpg"
     },
     {
       "Id": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\js\\site.js",
