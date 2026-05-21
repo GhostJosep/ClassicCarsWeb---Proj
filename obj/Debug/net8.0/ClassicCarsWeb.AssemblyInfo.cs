@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClassicCarsWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f22b4a3d8f2811e550619b66c23332f7fb29b828")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClassicCarsWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClassicCarsWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

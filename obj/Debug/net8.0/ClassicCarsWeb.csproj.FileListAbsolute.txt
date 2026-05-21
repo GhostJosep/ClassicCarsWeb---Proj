@@ -59,3 +59,4 @@ D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.pdb
 D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.genruntimeconfig.cache
 D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\ref\ClassicCarsWeb.dll
 D:\CAR DEALERSHIP\ClassicCarsWeb\bin\Debug\net8.0\cars.json
+D:\CAR DEALERSHIP\ClassicCarsWeb\obj\Debug\net8.0\ClassicCarsWeb.sourcelink.json

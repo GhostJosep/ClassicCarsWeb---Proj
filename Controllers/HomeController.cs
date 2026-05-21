@@ -106,6 +106,7 @@ namespace ClassicCarsWeb.Controllers
             ViewData["SortBy"] = sortBy;
 
             return View(pagedList);
+            
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t4AYW91nU+IRqHk4JWr/fI8Q7UdIbMK0FUifdH3XmEg=",
+  "Hash": "UmChCfeUCTSKqBB3rmToi4+8JtlavMri/qbtwOwu3cE=",
   "Source": "ClassicCarsWeb",
   "BasePath": "_content/ClassicCarsWeb",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\avanti.jpg"
+    },
+    {
+      "Identity": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\avanti.mp4",
+      "SourceId": "ClassicCarsWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\",
+      "BasePath": "_content/ClassicCarsWeb",
+      "RelativePath": "images/avanti.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\avanti.mp4"
     },
     {
       "Identity": "D:\\CAR DEALERSHIP\\ClassicCarsWeb\\wwwroot\\images\\jaguar.jpg",
