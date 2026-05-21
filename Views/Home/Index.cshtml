@@ -1,15 +1,7 @@
 ﻿@model IEnumerable<ClassicCarsWeb.Models.Car>
 
 @{
-    ViewData["Title"] = "Professional Garage Catalog";
-    int currentPage = (int)ViewData["CurrentPage"];
-    int totalPages = (int)ViewData["TotalPages"];
-    int totalCount = (int)ViewData["TotalCount"];
-    string searchQuery = (string)ViewData["SearchQuery"];
-    int? yearFrom = (int?)ViewData["YearFrom"];
-    int? yearTo = (int?)ViewData["YearTo"];
-    string selectedMake = (string)ViewData["SelectedMake"];
-    string sortBy = (string)ViewData["SortBy"];
+    ViewData["Title"] = "Classic Cars Fleet";
 }
 
 <div class="hero-video-wrapper mb-2" id="themeHeroZone">
@@ -18,16 +10,13 @@
     </video>
     <div class="hero-overlay-text p-4">
         <h1 class="display-4 fw-bold text-dark mb-2" style="letter-spacing: 2px;">The Golden Era.</h1>
-        <div class="mt-3"></div>
     </div>
 </div>
 
 <div class="container-fluid px-4 mt-4">
     <div class="row mb-3">
         <div class="col-12 d-flex justify-content-between align-items-center border-bottom border-secondary pb-2">
-            <span class="text-secondary fw-semibold">
-                Found @totalCount match(es) inside your filtered selection
-            </span>
+            <span class="text-secondary fw-semibold">Found @ViewData["TotalCount"] match(es)</span>
             <span class="badge bg-danger">Fleet Scale: 100 Cars Total</span>
         </div>
     </div>
@@ -39,127 +28,20 @@
                 {
                     @foreach (var car in Model)
                     {
-                        <div class="col-sm-6 col-md-4 mb-4">
-                            <div class="card h-100 classic-card classic-card-trigger text-light"
-                             data-title="@car.Title" data-img="@car.ImageUrl"
-                             data-make="@car.Make" data-year="@car.Year"
-                             data-engine="@car.Engine" data-hp="@car.Horsepower" data-fact="@car.FunFact">
-                                
-                                <div class="compare-checkbox-container" onclick="event.stopPropagation();">
-                                    <input type="checkbox" class="compare-check" data-id="@car.Title" data-title="@car.Title" data-engine="@car.Engine" data-hp="@car.Horsepower" data-year="@car.Year" data-img="@car.ImageUrl">
-                                    <label class="small text-white ms-1 fw-bold" style="font-size:0.65rem; cursor:pointer;">COMPARE</label>
-                                </div>
-
-                                <div class="card-img-wrapper">
-                                    <img src="@car.ImageUrl" alt="@car.Title" onerror="this.src='https://placehold.co/600x400/2b2b2b/eeeeee?text=Classic+Car'"/>
-                                    
-                                    <div class="card-hover-overlay">
-                                        <div class="text-white mb-1" style="font-size: 0.75rem; letter-spacing: 1px; color:#dc3545 !important; font-weight:700;">SPECIFICATIONS</div>
-                                        <div class="text-white small fw-semibold">⚙️ @car.Engine</div>
-                                        <div class="text-white small fw-semibold">🐎 @car.Horsepower HP</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="card-body d-flex flex-column justify-content-between gap-2">
-                                    <h5 class="card-title m-0" style="font-size: 1.1rem; font-weight: 600;">@car.Title</h5>
-                                    <div>
-                                        <span class="badge bg-danger me-1">@car.Year</span>
-                                        <span class="badge bg-secondary">@car.Make</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <partial name="Partials/_CarCard" model="car" />
                     }
-                    
-                    @if (totalPages > 1)
-                    {
-                        <div class="col-12 mt-2">
-                            <nav aria-label="Page navigation">
-                                <ul class="pagination justify-content-center">
-                                    <li class="page-item @(currentPage == 1 ? "disabled" : "")">
-                                        <a class="page-link page-link-dark" href="@Url.Action("Index", new { searchQuery = searchQuery, yearFrom = yearFrom, yearTo = yearTo, selectedMake = selectedMake, sortBy = sortBy, page = currentPage - 1 })">&laquo;</a>
-                                    </li>
-                                    @for (int i = 1; i <= totalPages; i++)
-                                    {
-                                        <li class="page-item @(currentPage == i ? "active" : "")">
-                                            <a class="page-link page-link-dark" href="@Url.Action("Index", new { searchQuery = searchQuery, yearFrom = yearFrom, yearTo = yearTo, selectedMake = selectedMake, sortBy = sortBy, page = i })">@i</a>
-                                        </li>
-                                    }
-                                    <li class="page-item @(currentPage == totalPages ? "disabled" : "")">
-                                        <a class="page-link page-link-dark" href="@Url.Action("Index", new { searchQuery = searchQuery, yearFrom = yearFrom, yearTo = yearTo, selectedMake = selectedMake, sortBy = sortBy, page = currentPage + 1 })">&raquo;</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    }
+                    <partial name="Partials/_Pagination" />
                 }
                 else
                 {
                     <div class="col-12 text-center py-5">
                         <h4 class="text-muted">No classics match that filtered criteria.</h4>
-                        <p class="text-secondary">Try widening your filters or search keywords.</p>
                     </div>
                 }
             </div>
         </div>
-
         <div class="col-lg-3 order-lg-2 mb-4">
-            <div class="card p-4 shadow control-container-card mb-4">
-                <h4 class="mb-3 control-panel-heading" style="font-weight: 600;"><span style="color: #dc3545;">Garage</span> Controls</h4>
-                <form action="@Url.Action("Index", "Home")" method="get">
-                    <div class="mb-3">
-                        <label class="small text-secondary fw-bold mb-1">KEYWORD SEARCH</label>
-                        <input type="text" name="searchQuery" class="form-control dark-input" placeholder="e.g. Mustang, Supra..." value="@searchQuery" autocomplete="off" />
-                    </div>
-                    <div class="mb-3">
-                        <label class="small text-secondary fw-bold mb-1">MANUFACTURER / MAKE</label>
-                        @Html.DropDownList("selectedMake", (SelectList)ViewBag.MakesList, "All Brands", new { @class = "form-select dark-input" })
-                    </div>
-                    <div class="mb-3">
-                        <label class="small text-secondary fw-bold mb-1">PRODUCTION TIMELINE (YEAR)</label>
-                        <div class="input-group">
-                            <input type="number" name="yearFrom" class="form-control dark-input" placeholder="From" value="@yearFrom" />
-                            <input type="number" name="yearTo" class="form-control dark-input" placeholder="To" value="@yearTo" />
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <label class="small text-secondary fw-bold mb-1">REARRANGE FLEET ORDER</label>
-                        <select name="sortBy" class="form-select dark-input">
-                            <!option value="year_asc" @(sortBy == "year_asc" ? "selected" : "")>Year: Oldest to Newest</!option>
-                            <!option value="year_desc" @(sortBy == "year_desc" ? "selected" : "")>Year: Newest to Oldest</!option>
-                            <!option value="name_asc" @(sortBy == "name_asc" ? "selected" : "")>Alphabetical (A-Z)</!option>
-                            <!option value="name_desc" @(sortBy == "name_desc" ? "selected" : "")>Alphabetical (Z-A)</!option>
-                        </select>
-                    </div>
-                    <div class="d-grid gap-2">
-                        <button type="submit" class="btn text-white" style="background-color: #dc3545;">Apply Filters</button>
-                        <a href="@Url.Action("Index", "Home")" class="btn btn-outline-secondary btn-sm border-secondary target-reset-btn">Reset View</a>
-                    </div>
-                </form>
-            </div>
-
-            <div class="card p-4 shadow control-container-card">
-                <h5 class="mb-3 control-panel-heading fw-bold"><i class="text-danger">⚡</i> Garage Insights</h5>
-                <div id="insights-rotation-box" style="min-height: 65px; position: relative;">
-                    <div class="insight-slide" id="slide-0" style="display: block;">
-                        <small class="text-secondary d-block uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.5px; font-weight: 700;">FEATURED VINTAGE (PRE-1965)</small>
-                        <span id="dynamic-vintage-car" class="fs-5 insight-car-text fw-semibold">1954 Mercedes-Benz 300 SL</span>
-                    </div>
-                    <div class="insight-slide" id="slide-1" style="display: none;">
-                        <small class="text-secondary d-block uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.5px; font-weight: 700;">MODERN CLASSIC (1980+)</small>
-                        <span id="dynamic-modern-car" class="fs-5 insight-car-text fw-semibold">1988 Ferrari Testarossa</span>
-                    </div>
-                    <div class="insight-slide" id="slide-2" style="display: none;">
-                        <small class="text-secondary d-block uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.5px; font-weight: 700;">FEATURED PERF VEHICLE</small>
-                        <span id="dynamic-perf-car" class="text-danger fw-semibold d-block text-truncate" style="font-size: 1rem;">1970 Plymouth Superbird (425 hp)</span>
-                    </div>
-                </div>
-                <div class="d-flex gap-2 mt-2 pt-1">
-                    <span id="dot-0" onclick="manuallyJumpToSlide(0)" class="rounded-circle d-inline-block" style="width: 10px; height: 10px; background-color: #dc3545; cursor: pointer; transition: background-color 0.2s;"></span>
-                    <span id="dot-1" onclick="manuallyJumpToSlide(1)" class="rounded-circle d-inline-block" style="width: 10px; height: 10px; background-color: #6c757d; cursor: pointer; transition: background-color 0.2s;"></span>
-                    <span id="dot-2" onclick="manuallyJumpToSlide(2)" class="rounded-circle d-inline-block" style="width: 10px; height: 10px; background-color: #6c757d; cursor: pointer; transition: background-color 0.2s;"></span>
-                </div>
-            </div>
+            <partial name="Partials/_Sidebar" />
         </div>
     </div>
 </div>
@@ -175,73 +57,4 @@
     </div>
 </div>
 
-<div class="modal fade" id="compareDisplayModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content border-0 text-light shadow-lg" style="background-color: #1a1a1a;">
-            <div class="modal-header border-bottom border-secondary">
-                <h5 class="modal-title fw-bold"><span style="color:#dc3545;">Model Comparison</span> Workbench</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body p-4">
-                <div class="table-responsive">
-                    <table class="table table-dark table-bordered align-middle text-center m-0" style="border-color: #333;">
-                        <thead>
-                            <tr id="compareRowImage" style="background-color: #121212;">
-                                <th style="width: 20%; min-width:150px;" class="align-middle text-secondary fw-bold">VEHICLE VIEW</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr id="compareRowTitle">
-                                <td class="text-secondary fw-bold text-start ps-3">Model Name</td>
-                            </tr>
-                            <tr id="compareRowYear">
-                                <td class="text-secondary fw-bold text-start ps-3">Production Year</td>
-                            </tr>
-                            <tr id="compareRowEngine">
-                                <td class="text-secondary fw-bold text-start ps-3">Engine Configuration</td>
-                            </tr>
-                            <tr id="compareRowHP">
-                                <td class="text-secondary fw-bold text-start ps-3">Horsepower Output</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content border-0 text-light shadow-lg" style="background-color: #1e1e1e;">
-            <div class="modal-header border-bottom border-secondary">
-                <h5 class="modal-title fw-bold" id="modalTitle">Car Details</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" style="z-index: 1060; opacity: 1;"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <img id="modalImage" src="" class="img-fluid rounded shadow-sm w-100" style="max-height: 280px; object-fit: cover;" alt="Car view" />
-                    </div>
-                    <div class="col-md-6 d-flex flex-column justify-content-between">
-                        <div>
-                            <h4 id="modalCarName" class="text-white fw-bold mb-3"></h4>
-                            <ul class="list-group list-group-flush bg-transparent">
-                                <li class="list-group-item bg-transparent text-light border-secondary px-0">
-                                    <strong>Engine:</strong> <span id="modalEngine" class="float-end text-secondary"></span>
-                                </li>
-                                <li class="list-group-item bg-transparent text-light border-secondary px-0">
-                                    <strong>Output Performance:</strong> <span id="modalHP" class="float-end text-secondary"></span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="mt-3 p-3 rounded" style="background-color: #2b2b2b;">
-                            <small class="text-danger fw-bold d-block mb-1">HERITAGE TRIVIA</small>
-                            <p id="modalFact" class="m-0 text-secondary" style="font-size: 0.9rem; line-height: 1.4;"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<partial name="Partials/_Modals" />

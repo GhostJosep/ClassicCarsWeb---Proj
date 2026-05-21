@@ -1,0 +1,37 @@
+@model ClassicCarsWeb.Models.Car
+
+<div class="container mt-5">
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <h1 class="text-light fw-bold">@Model.Title</h1>
+            <h4 class="text-danger">@Model.Make | @Model.Year</h4>
+        </div>
+        <div class="col-md-6 text-md-end">
+            <a asp-action="Index" class="btn btn-outline-light px-4">
+                ← Back to Collection
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+       <div class="row align-items-start">
+    <div class="col-md-7">
+        <img src="@Model.ImageUrl" alt="@Model.Title" class="img-fluid rounded shadow-lg border border-secondary" />
+    </div>
+    
+    <div class="col-md-5">
+        <div class="bg-dark p-4 rounded border border-secondary"> 
+            <h3 class="text-light mb-4 border-bottom pb-2">Technical Specs</h3>
+            
+            <ul class="list-unstyled text-light">
+                <li class="mb-2"><strong>Engine:</strong> <span class="text-secondary">@Model.Engine</span></li>
+                <li class="mb-2"><strong>Horsepower:</strong> <span class="text-secondary">@Model.Horsepower</span></li>
+                <li class="mb-2"><strong>Year:</strong> <span class="text-secondary">@Model.Year</span></li>
+                <li class="mb-2"><strong>Transmission:</strong> <span class="text-secondary">@Model.Transmission</span></li>
+                <li class="mb-2"><strong>Drive Type:</strong> <span class="text-secondary">@Model.DriveType</span></li>
+                <li class="mb-2"><strong>Body Style:</strong> <span class="text-secondary">@Model.BodyStyle</span></li>
+                <li class="mb-2"><strong>Estimated Value:</strong> <span class="text-secondary">@Model.EstimatedValue</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
