@@ -1,0 +1,59 @@
+﻿@model IEnumerable<ClassicCarsWeb.Models.Car>
+
+@{
+    ViewData["Title"] = "Classic Cars Fleet";
+}
+
+<div class="hero-video-wrapper mb-2" id="themeHeroZone">
+    <video autoplay loop muted playsinline class="hero-video-content">
+        <source src="~/images/avanti.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay-text p-4">
+        <h1 class="display-4 fw-bold text-dark mb-2" style="letter-spacing: 2px;">The Golden Era.</h1>
+    </div>
+</div>
+
+<div class="container-fluid px-4 mt-4">
+    <div class="row mb-3">
+        <div class="col-12 d-flex justify-content-between align-items-center border-bottom border-secondary pb-2">
+            <span class="text-secondary fw-semibold">Found @ViewData["TotalCount"] match(es)</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-9 order-lg-1">
+            <div class="row">
+                @if (Model != null && Model.Any())
+                {
+                    @foreach (var car in Model)
+                    {
+                        <partial name="Partials/_CarCard" model="car" />
+                    }
+                    <partial name="Partials/_Pagination" />
+                }
+                else
+                {
+                    <div class="col-12 text-center py-5">
+                        <h4 class="text-muted">No classics match that filtered criteria.</h4>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="col-lg-3 order-lg-2 mb-4">
+            <partial name="Partials/_Sidebar" />
+        </div>
+    </div>
+</div>
+
+<div id="compareDrawer" class="p-3 d-flex justify-content-between align-items-center">
+    <div class="text-light">
+        <span class="fw-bold text-danger">★ Workbench:</span> 
+        <span id="compareCount" class="ms-1 fw-semibold">0</span> / 3 Selected
+    </div>
+    <div>
+        <button class="btn btn-sm btn-outline-secondary me-2 text-white border-secondary" onclick="clearComparisons()">Clear</button>
+        <button id="compareLaunchBtn" class="btn btn-sm btn-danger fw-bold" disabled onclick="launchComparisonModal()">Compare Fleet Models</button>
+    </div>
+</div>
+
+<partial name="Partials/_Modals" />

@@ -1,0 +1,73 @@
+<div class="modal fade" id="compareDisplayModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content border-0 text-light shadow-lg" style="background-color: #1a1a1a;">
+            <div class="modal-header border-bottom border-secondary">
+                <h5 class="modal-title fw-bold"><span style="color:#dc3545;">Model Comparison</span> Workbench</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="table-responsive">
+                    <table class="table table-dark table-bordered align-middle text-center m-0" style="border-color: #333;">
+                        <thead><tr id="compareRowImage" style="background-color: #121212;"><th class="align-middle text-secondary fw-bold">VEHICLE VIEW</th></tr></thead>
+                        <tbody>
+                            <tr id="compareRowTitle"><td class="text-secondary fw-bold text-start ps-3">Model Name</td></tr>
+                            <tr id="compareRowYear"><td class="text-secondary fw-bold text-start ps-3">Production Year</td></tr>
+                            <tr id="compareRowEngine"><td class="text-secondary fw-bold text-start ps-3">Engine Configuration</td></tr>
+                            <tr id="compareRowHP"><td class="text-secondary fw-bold text-start ps-3">Horsepower Output</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="quickViewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 text-light shadow-lg" style="background-color: #1e1e1e;">
+            <div class="modal-header border-bottom border-secondary">
+                <h5 class="modal-title fw-bold" id="modalTitle">Car Details</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6"><img id="modalImage" src="" class="img-fluid rounded w-100" /></div>
+                    <div class="col-md-6">
+                        <h4 id="modalCarName" class="text-white fw-bold"></h4>
+                        <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><strong>Engine:</strong> <span id="modalEngine"></span></li>
+                        <li class="mb-2"><strong>HP:</strong> <span id="modalHP"></span></li>
+                        <li class="mb-2"><strong>Drive Type:</strong> <span id="modalDrive"></span></li>
+                        <li class="mb-2"><strong>Transmission:</strong> <span id="modalTrans"></span></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="testDriveModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border border-secondary">
+            <div class="modal-header border-bottom-0">
+                <h5 class="modal-title" id="testDriveModalTitle">Schedule Test Drive</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="successMessage" class="text-center p-4" style="display: none;">
+                    <h4 class="text-success">Booking Confirmed!</h4>
+                    <p>We've received your request. A representative will contact you soon.</p>
+                </div>
+                <form id="testDriveForm" onsubmit="handleBooking(event)">
+                    <input type="hidden" id="testDriveCarTitle" name="carTitle" />
+                    <div class="mb-2"><label class="small fw-bold text-secondary">YOUR NAME</label><input type="text" name="userName" class="form-control bg-secondary text-white" required /></div>
+                    <div class="mb-2"><label class="small fw-bold text-secondary">EMAIL</label><input type="email" name="email" class="form-control bg-secondary text-white" required /></div>
+                    <div class="mb-2"><label class="small fw-bold text-secondary">PHONE NUMBER</label><input type="tel" name="phone" class="form-control bg-secondary text-white" required /></div>
+                    <div class="mb-2"><label class="small fw-bold text-secondary">ADDRESS</label><textarea name="address" class="form-control bg-secondary text-white" rows="2" required></textarea></div>
+                    <div class="mb-3"><label class="small fw-bold text-secondary">PREFERRED DATE</label><input type="date" name="preferredDate" class="form-control bg-secondary text-white" required /></div>
+                    <button type="submit" class="btn btn-danger w-100">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

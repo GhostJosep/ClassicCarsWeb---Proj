@@ -1,0 +1,673 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ClassicCarsWeb.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ClassicCarsWeb.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\190e_evo.jpg",
+      "PackagePath": "staticwebassets\\images\\190e_evo.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\190sl.jpg",
+      "PackagePath": "staticwebassets\\images\\190sl.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\250gto.jpg",
+      "PackagePath": "staticwebassets\\images\\250gto.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\288gto.jpg",
+      "PackagePath": "staticwebassets\\images\\288gto.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\300sl.jpg",
+      "PackagePath": "staticwebassets\\images\\300sl.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\930turbo.jpg",
+      "PackagePath": "staticwebassets\\images\\930turbo.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\993gt2.jpg",
+      "PackagePath": "staticwebassets\\images\\993gt2.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\alfaspider.jpg",
+      "PackagePath": "staticwebassets\\images\\alfaspider.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\alpine.jpg",
+      "PackagePath": "staticwebassets\\images\\alpine.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\avanti.jpg",
+      "PackagePath": "staticwebassets\\images\\avanti.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\avanti.mp4",
+      "PackagePath": "staticwebassets\\images\\avanti.mp4"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\bandit.jpg",
+      "PackagePath": "staticwebassets\\images\\bandit.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\belair.jpg",
+      "PackagePath": "staticwebassets\\images\\belair.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\bmw2002.jpg",
+      "PackagePath": "staticwebassets\\images\\bmw2002.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\boattail.jpg",
+      "PackagePath": "staticwebassets\\images\\boattail.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\boss429.jpg",
+      "PackagePath": "staticwebassets\\images\\boss429.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\bronco.jpg",
+      "PackagePath": "staticwebassets\\images\\bronco.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\camaro.jpg",
+      "PackagePath": "staticwebassets\\images\\camaro.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\challenger.jpg",
+      "PackagePath": "staticwebassets\\images\\challenger.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\charger.jpg",
+      "PackagePath": "staticwebassets\\images\\charger.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\charger72.jpg",
+      "PackagePath": "staticwebassets\\images\\charger72.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\chevelle.jpg",
+      "PackagePath": "staticwebassets\\images\\chevelle.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\cobra.jpg",
+      "PackagePath": "staticwebassets\\images\\cobra.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\continental.jpg",
+      "PackagePath": "staticwebassets\\images\\continental.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\corvette.jpg",
+      "PackagePath": "staticwebassets\\images\\corvette.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\cougar.jpg",
+      "PackagePath": "staticwebassets\\images\\cougar.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\cuda.jpg",
+      "PackagePath": "staticwebassets\\images\\cuda.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\cuda68.jpg",
+      "PackagePath": "staticwebassets\\images\\cuda68.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\dart.jpg",
+      "PackagePath": "staticwebassets\\images\\dart.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\datsun.jpg",
+      "PackagePath": "staticwebassets\\images\\datsun.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\daytona.jpg",
+      "PackagePath": "staticwebassets\\images\\daytona.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\db5.jpg",
+      "PackagePath": "staticwebassets\\images\\db5.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\delorean.jpg",
+      "PackagePath": "staticwebassets\\images\\delorean.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\diablogt.jpg",
+      "PackagePath": "staticwebassets\\images\\diablogt.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\duster.jpg",
+      "PackagePath": "staticwebassets\\images\\duster.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\e30m3.jpg",
+      "PackagePath": "staticwebassets\\images\\e30m3.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\eb110.jpg",
+      "PackagePath": "staticwebassets\\images\\eb110.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\elcamino.jpg",
+      "PackagePath": "staticwebassets\\images\\elcamino.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\eldoconv.jpg",
+      "PackagePath": "staticwebassets\\images\\eldoconv.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\eldorado.jpg",
+      "PackagePath": "staticwebassets\\images\\eldorado.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\eleanor.jpg",
+      "PackagePath": "staticwebassets\\images\\eleanor.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\escort.jpg",
+      "PackagePath": "staticwebassets\\images\\escort.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\etype.jpg",
+      "PackagePath": "staticwebassets\\images\\etype.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\f40.jpg",
+      "PackagePath": "staticwebassets\\images\\f40.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\firebird.jpg",
+      "PackagePath": "staticwebassets\\images\\firebird.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\fj40.jpg",
+      "PackagePath": "staticwebassets\\images\\fj40.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\gnx.jpg",
+      "PackagePath": "staticwebassets\\images\\gnx.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\gt350.jpg",
+      "PackagePath": "staticwebassets\\images\\gt350.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\gt500kr.jpg",
+      "PackagePath": "staticwebassets\\images\\gt500kr.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\gtcs.jpg",
+      "PackagePath": "staticwebassets\\images\\gtcs.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\gto65.jpg",
+      "PackagePath": "staticwebassets\\images\\gto65.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\gto67.jpg",
+      "PackagePath": "staticwebassets\\images\\gto67.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\gtojudge.jpg",
+      "PackagePath": "staticwebassets\\images\\gtojudge.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\gtx.jpg",
+      "PackagePath": "staticwebassets\\images\\gtx.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\gtx71.jpg",
+      "PackagePath": "staticwebassets\\images\\gtx71.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\interceptor.jpg",
+      "PackagePath": "staticwebassets\\images\\interceptor.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\jaguar.jpg",
+      "PackagePath": "staticwebassets\\images\\jaguar.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\javelin.jpg",
+      "PackagePath": "staticwebassets\\images\\javelin.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\l88.jpg",
+      "PackagePath": "staticwebassets\\images\\l88.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\lancia037.jpg",
+      "PackagePath": "staticwebassets\\images\\lancia037.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\lancia_delta.jpg",
+      "PackagePath": "staticwebassets\\images\\lancia_delta.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\lincoln61.jpg",
+      "PackagePath": "staticwebassets\\images\\lincoln61.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logo.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\longchamp.jpg",
+      "PackagePath": "staticwebassets\\images\\longchamp.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\mach1.jpg",
+      "PackagePath": "staticwebassets\\images\\mach1.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\mclarenf1.jpg",
+      "PackagePath": "staticwebassets\\images\\mclarenf1.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\miura.jpg",
+      "PackagePath": "staticwebassets\\images\\miura.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\montecarlo.jpg",
+      "PackagePath": "staticwebassets\\images\\montecarlo.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\mr2.jpg",
+      "PackagePath": "staticwebassets\\images\\mr2.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\mustang.jpg",
+      "PackagePath": "staticwebassets\\images\\mustang.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\nova.jpg",
+      "PackagePath": "staticwebassets\\images\\nova.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\nsx.jpg",
+      "PackagePath": "staticwebassets\\images\\nsx.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\olds442.jpg",
+      "PackagePath": "staticwebassets\\images\\olds442.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\pantera.jpg",
+      "PackagePath": "staticwebassets\\images\\pantera.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\porsche.jpg",
+      "PackagePath": "staticwebassets\\images\\porsche.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\porsche356.jpg",
+      "PackagePath": "staticwebassets\\images\\porsche356.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\porsche78.jpg",
+      "PackagePath": "staticwebassets\\images\\porsche78.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\porsche959.jpg",
+      "PackagePath": "staticwebassets\\images\\porsche959.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\pulsar.jpg",
+      "PackagePath": "staticwebassets\\images\\pulsar.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\quattro.jpg",
+      "PackagePath": "staticwebassets\\images\\quattro.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\r390.jpg",
+      "PackagePath": "staticwebassets\\images\\r390.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\roadrunner.jpg",
+      "PackagePath": "staticwebassets\\images\\roadrunner.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\rs200.jpg",
+      "PackagePath": "staticwebassets\\images\\rs200.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\rx7.jpg",
+      "PackagePath": "staticwebassets\\images\\rx7.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\scrambler.jpg",
+      "PackagePath": "staticwebassets\\images\\scrambler.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\shelbydaytona.jpg",
+      "PackagePath": "staticwebassets\\images\\shelbydaytona.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\skyline.jpg",
+      "PackagePath": "staticwebassets\\images\\skyline.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\stratos.jpg",
+      "PackagePath": "staticwebassets\\images\\stratos.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\subaru22b.jpg",
+      "PackagePath": "staticwebassets\\images\\subaru22b.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\superbee.jpg",
+      "PackagePath": "staticwebassets\\images\\superbee.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\superbird.jpg",
+      "PackagePath": "staticwebassets\\images\\superbird.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\supra.jpg",
+      "PackagePath": "staticwebassets\\images\\supra.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\talladega.jpg",
+      "PackagePath": "staticwebassets\\images\\talladega.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\testarossa.jpg",
+      "PackagePath": "staticwebassets\\images\\testarossa.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\toronado.jpg",
+      "PackagePath": "staticwebassets\\images\\toronado.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\trailduster.jpg",
+      "PackagePath": "staticwebassets\\images\\trailduster.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\transam69.jpg",
+      "PackagePath": "staticwebassets\\images\\transam69.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\truck.jpg",
+      "PackagePath": "staticwebassets\\images\\truck.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\vectorw8.jpg",
+      "PackagePath": "staticwebassets\\images\\vectorw8.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\vette73.jpg",
+      "PackagePath": "staticwebassets\\images\\vette73.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\vwbus.jpg",
+      "PackagePath": "staticwebassets\\images\\vwbus.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\images\\xk120.jpg",
+      "PackagePath": "staticwebassets\\images\\xk120.jpg"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\CAR DEALERSHIP\\NEW CLASSIC CARS\\ClassicCarsWeb---Proj-main\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ClassicCarsWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ClassicCarsWeb.props",
+      "PackagePath": "build\\ClassicCarsWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ClassicCarsWeb.props",
+      "PackagePath": "buildMultiTargeting\\ClassicCarsWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ClassicCarsWeb.props",
+      "PackagePath": "buildTransitive\\ClassicCarsWeb.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

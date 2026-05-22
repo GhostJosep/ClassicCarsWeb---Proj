@@ -1,0 +1,31 @@
+<div class="card p-4 shadow control-container-card mb-4">
+    <h4 class="mb-3 control-panel-heading" style="font-weight: 600;"><span style="color: #dc3545;">Garage</span> Controls</h4>
+    <form action="@Url.Action("Index", "Home")" method="get">
+        <div class="mb-3">
+            <label class="small text-secondary fw-bold mb-1">KEYWORD SEARCH</label>
+            <input type="text" name="searchQuery" class="form-control dark-input" placeholder="e.g. Mustang, Supra..." value="@ViewData["SearchQuery"]" />
+        </div>
+        <div class="mb-3">
+            <label class="small text-secondary fw-bold mb-1">MANUFACTURER / MAKE</label>
+            @Html.DropDownList("selectedMake", (SelectList)ViewBag.MakesList, "All Brands", new { @class = "form-select dark-input" })
+        </div>
+        <div class="mb-3">
+            <label class="small text-secondary fw-bold mb-1">PRODUCTION TIMELINE (YEAR)</label>
+            <div class="input-group">
+                <input type="number" name="yearFrom" class="form-control dark-input" placeholder="From" value="@ViewData["YearFrom"]" />
+                <input type="number" name="yearTo" class="form-control dark-input" placeholder="To" value="@ViewData["YearTo"]" />
+            </div>
+        </div>
+        <div class="d-grid gap-2">
+            <button type="submit" class="btn text-white" style="background-color: #dc3545;">Apply Filters</button>
+            <a href="@Url.Action("Index", "Home")" class="btn btn-outline-secondary btn-sm border-secondary">Reset View</a>
+        </div>
+    </form>
+</div>
+<div class="card p-4 shadow control-container-card">
+    <h5 class="mb-3 control-panel-heading fw-bold"><i class="text-danger">⚡</i> Garage Insights</h5>
+    <div id="insight-container" style="min-height: 65px; position: relative;">
+        <small id="insightCategory" class="text-secondary d-block uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.5px; font-weight: 700;">LOADING...</small>
+        <span id="insightTitle" class="fs-5 insight-car-text fw-semibold">Please wait...</span>
+    </div>
+</div>
