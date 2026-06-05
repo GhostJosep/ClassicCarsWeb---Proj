@@ -383,3 +383,9 @@ D:\CAR DEALERSHIP\BETTER CLASSIC CARS\ClassicCarsWeb---Proj-master\obj\Debug\net
 D:\CAR DEALERSHIP\BETTER CLASSIC CARS\ClassicCarsWeb---Proj-master\obj\Debug\net8.0\ClassicCarsWeb.pdb
 D:\CAR DEALERSHIP\BETTER CLASSIC CARS\ClassicCarsWeb---Proj-master\obj\Debug\net8.0\ClassicCarsWeb.genruntimeconfig.cache
 D:\CAR DEALERSHIP\BETTER CLASSIC CARS\ClassicCarsWeb---Proj-master\obj\Debug\net8.0\ref\ClassicCarsWeb.dll
+D:\CAR DEALERSHIP\BETTER CLASSIC CARS\ClassicCarsWeb---Proj-master\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\CAR DEALERSHIP\BETTER CLASSIC CARS\ClassicCarsWeb---Proj-master\bin\Debug\net8.0\MailKit.dll
+D:\CAR DEALERSHIP\BETTER CLASSIC CARS\ClassicCarsWeb---Proj-master\bin\Debug\net8.0\MimeKit.dll
+D:\CAR DEALERSHIP\BETTER CLASSIC CARS\ClassicCarsWeb---Proj-master\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\CAR DEALERSHIP\BETTER CLASSIC CARS\ClassicCarsWeb---Proj-master\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\CAR DEALERSHIP\BETTER CLASSIC CARS\ClassicCarsWeb---Proj-master\obj\Debug\net8.0\ClassicCarsWeb.sourcelink.json
